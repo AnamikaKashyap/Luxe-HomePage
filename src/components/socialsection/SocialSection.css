@@ -1,0 +1,144 @@
+.social-section {
+  text-align: center;
+  padding: 50px 40px;
+  background: #ffffff;
+  padding-bottom: 0;
+
+  @media screen and (max-width: 600px) {
+    padding: 30px 0;
+    padding-bottom: 0;
+  }
+}
+
+.social-title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.underline {
+  width: 80px;
+  height: 2px;
+  margin: 10px auto 20px;
+  background: #000;
+}
+
+.social-username {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #b28b52;
+  margin-top: -20px;
+}
+
+.social-username span {
+  font-weight: 500;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+}
+
+.social-image-wrapper {
+  position: relative;
+}
+
+.social-image-wrapper img {
+
+  height: 337px;
+  object-fit: cover;
+  filter: brightness(70%);
+  transition: all 0.3s ease;
+}
+
+.social-image-wrapper:hover img {
+  filter: brightness(60%);
+}
+
+.insta-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  color: white;
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .social-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .social-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+}
+
+
+.social-auto-scroll {
+  display: flex;
+  gap: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll-left 25s linear infinite;
+}
+
+.social-auto-scroll .social-image-wrapper {
+  flex: 0 0 20%;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .social-auto-scroll .social-image-wrapper {
+    flex: 0 0 33.33%;
+  }
+}
+
+@media (max-width: 600px) {
+  .social-auto-scroll .social-image-wrapper {
+    flex: 0 0 50%;
+  }
+}
+
+.social-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 20%;
+  padding: 0 5px;
+}
+
+@media (max-width: 1024px) {
+  .slide {
+    flex: 0 0 33.33%;
+  }
+}
+
+@media (max-width: 600px) {
+  .slide {
+    flex: 0 0 50%;
+  }
+}

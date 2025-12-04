@@ -1,0 +1,164 @@
+.rooms-section {
+
+
+  padding: 0 40px 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.rooms-blocks {
+  background: #F8F5F1;
+}
+
+/* GRID */
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.room-card {
+  text-align: left;
+}
+
+.room-card img {
+  width: 100%;
+  height: 547px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.room-card h3 {
+  font-family: Aileron;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 20px;
+  margin-left: 0;
+
+  @media screen and (max-width: 600px) {
+    font-size: 19px;
+    text-align: center;
+  }
+}
+
+.room-card p {
+  font-family: Aileron;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  line-height: 20px;
+  line-height: 30px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+  }
+}
+
+/* BUTTON */
+.explore-btn-wrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.explore-btn {
+  padding: 12px 35px;
+  background-color: #b08d57;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #8c6b40;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 992px) {
+  .rooms-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 600px) {
+  .rooms-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+}
+
+.image-room {
+  height: 547px;
+}
+
+.explore-btn-rooms {
+  width: 188px;
+  height: 57px;
+  angle: 0 deg;
+  opacity: 1;
+  top: 3106px;
+  left: 662.5px;
+  padding-top: 14px;
+  padding-right: 53px;
+  padding-bottom: 14px;
+  padding-left: 53px;
+  gap: 10px;
+  background: #AA8453;
+  font-family: Aileron;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFF;
+  border: 1px solid #AA8453;
+  cursor: pointer;
+}
+
+.explore-btn-rooms:hover {
+  background: #F8F5F1;
+  color: #AA8453;
+}
+
+.room-card {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 547px;
+  overflow: hidden;
+  /* IMPORTANT */
+  border-radius: 6px;
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transform: scale(1);
+  transition: transform 4s ease;
+  /* slow luxury zoom */
+}
+
+/* Zoom only inside wrapper (text won't move!) */
+.room-card:hover .image-wrapper img {
+  transform: scale(1.15);
+}

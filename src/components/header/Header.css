@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Adibafih;
+  src: url('./../../fonts/Adibafih.otf');
+}
+
+.about-section {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-title {
+  font-family: Adibafih;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 40px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #000;
+
+  @media screen and (max-width: 600px) {
+    font-size: 28px;
+  }
+}
+
+.underline {
+  width: 164px;
+  height: 2px;
+  background-color: black;
+  margin: 15px auto 30px;
+}
+
+.about-description {
+  font-family: Aileron;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #000;
+
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+  }
+}

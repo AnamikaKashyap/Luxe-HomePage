@@ -1,0 +1,257 @@
+.sb-wrapper {
+  padding: 18px 40px;
+  background: linear-gradient(#fafafa, #fff);
+
+  @media screen and (max-width: 600px) {
+    padding: 20px 10px;
+  }
+}
+
+.searchbar-container {
+  width: fit-content;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  background: #fff;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #0000000F;
+  padding: 18px 22px;
+  box-shadow: 0px 10px 48px 0px #00000014;
+  position: relative;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    gap: 20px;
+  }
+
+}
+
+
+.sb-field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 20px;
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  min-width: 200px;
+
+  @media screen and (max-width: 600px) {
+    min-width: 100%;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+
+.sb-label {
+  font-family: Aileron;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+}
+
+
+.sb-arrow {
+  font-size: 12px;
+  opacity: 0.9;
+  margin-left: 60px;
+}
+
+.divider {
+  width: 1px;
+  height: 44px;
+  background: #000;
+
+  @media screen and (max-width: 600px) {
+    height: 0;
+    width: 0;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    width: 100%;
+    height: 1px;
+  }
+}
+
+
+.search-btn {
+  margin-left: 20px;
+  width: 181px;
+  height: 57px;
+  angle: 0 deg;
+  opacity: 1;
+  padding-top: 14px;
+  padding-right: 53px;
+  padding-bottom: 14px;
+  padding-left: 53px;
+  gap: 10px;
+  border: 1px solid #AA8453;
+  background: #AA8453;
+  font-family: Aileron;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFF;
+}
+
+.search-btn:hover {
+  background: #fff;
+  color: #AA8453;
+  cursor: pointer;
+}
+
+.sb-dropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  background: white;
+  border: 1px solid #e9e9e9;
+  padding: 14px;
+  min-width: 240px;
+  box-shadow: 0 10px 30px rgba(10, 10, 10, 0.08);
+  z-index: 40;
+  border-radius: 4px;
+
+  @media screen and (max-width: 600px) {
+    min-width: 100%;
+  }
+}
+
+.sb-dropdown-left {
+  left: 10px;
+}
+
+.sb-dropdown-center {
+  left: 50%;
+  transform:
+    translateX(-50%);
+  min-width: 320px;
+
+  @media screen and (max-width: 600px) {
+    min-width: 100%;
+  }
+}
+
+.sb-dropdown-right {
+  right: 10px;
+}
+
+.rooms-list button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.rooms-list button:hover {
+  background: #f6f6f6;
+}
+
+.sb-dropdown label {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.sb-dropdown input[type="date"] {
+  padding: 8px;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.guest-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  width: 280px;
+
+  @media screen and (max-width: 600px) {
+    width: auto;
+  }
+}
+
+.guest-name {
+  font-size: 14px;
+}
+
+.guest-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.guest-controls button {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 0;
+}
+
+.guest-controls span {
+  min-width: 20px;
+  text-align: center;
+}
+
+.sb-dropdown-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 10px;
+
+
+}
+
+.sb-dropdown-actions button {
+  padding: 7px 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+.sb-dropdown-actions button:last-child {
+  background: #f2f2f2;
+  border-color: #ccc;
+}
+
+@media (max-width: 860px) {
+
+  .search-btn {
+    padding: 12px 26px;
+    font-size: 16px;
+  }
+}
