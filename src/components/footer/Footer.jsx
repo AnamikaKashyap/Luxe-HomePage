@@ -1,11 +1,11 @@
 import React from "react";
 import "./Footer.css";
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
-import logo from './../../../public/logo.svg'
-import instagram from './../../../public/instagram2.svg';
-import trip from './../../../public/trip.svg';
-import facebookImg from './../../../public/facebookImg.svg';
-import youtube from './../../../public/youtubeImg.svg';
+import logo from './../../../public/Logo.svg'
+import instagram from './../../../public/Instagram2.svg';
+import trip from './../../../public/Trip.svg';
+import facebookImg from './../../../public/FacebookImg.svg';
+import youtube from './../../../public/YoutubeImg.svg';
 
 const Footer = () => {
   return (
