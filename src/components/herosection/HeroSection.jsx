@@ -45,7 +45,7 @@ const HeroSection = () => {
         <div className="hero-text" ref={textRef}>
           <div></div>
           <div>
-            <p className="welcome-txt">WELCOME TEXT</p>
+            <p className="welcome-txt">WELCOME TO</p>
 
             <h1 className="hero-heading">LUXE PLAZA</h1>
           </div>
