@@ -9,7 +9,7 @@ import Footer from './components/footer/Footer';
 import SocialSection from './components/socialsection/SocialSection';
 import HeroSection from './components/herosection/HeroSection';
 import './App.css'
-import Events from './components/events/events';
+import Events from './components/events/Events';
 
 function App() {
 
